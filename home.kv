@@ -1,0 +1,48 @@
+MDScreen:
+    name:"home"
+    MDFloatLayout:
+        md_bg_color:1,1,1
+        
+    Image:
+        source: 'home_new.png'  # Replace with your image path
+      
+        size_hint:.70,.70
+        pos_hint:{"center_x": .4,"center_y": .84}
+    
+    Button:
+        size_hint: None, None
+        size: dp(100), dp(40)  # Set the size of the button
+        pos_hint: {"center_x": 0.5, "center_y": 0.65}
+        background_color: 0, 0, 0, 0
+        canvas.before:
+            Color:
+                rgba: 1, 1,1
+            RoundedRectangle:
+                size: self.size
+                pos: self.pos
+                radius: [6]
+            Rectangle:
+                source: 'mic.png'  # Replace with your image path
+                size: self.size
+                pos: self.pos
+        on_release: app.on_voice_search()
+
+    MDLabel:
+        id: output_label
+        text: "."
+        font_size:"15sp"
+        color:0,0,0
+        pos_hint:{"center_x":0.6,"center_y":0.44}
+
+           
+           
+
+
+
+
+       
+
+
+
+
+       
