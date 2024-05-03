@@ -1,0 +1,1 @@
+This Kiosk is a mobile app that can be used to retrieve query any crime record using speech. It takes atmost care to ensure that the safety of the records are maintained and the users are authenticated and authorized before usage.
